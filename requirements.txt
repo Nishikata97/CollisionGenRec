@@ -1,0 +1,12 @@
+# Tested with the versions in parentheses; the lower bounds are conservative.
+torch>=2.0           # (tested 2.10.0)
+transformers>=4.40,<5  # (tested 4.52.4) - T5 generator + tokenizer
+accelerate>=0.26     # (tested 1.13.0) - HuggingFace Trainer backend
+sentencepiece>=0.1.99  # (tested 0.2.0) - loads configs/T5-d128/spiece.model
+protobuf>=3.20       # (tested 5.29.6) - sentencepiece tokenizer
+numpy>=1.24          # (tested 2.4.2)
+scipy>=1.10          # (tested 1.17.1) - Hungarian matching for ZCR
+scikit-learn>=1.2    # (tested 1.8.0) - RK-Means quantizer
+faiss-cpu>=1.7.4     # (tested faiss 1.13.2; faiss-gpu also works) - RK-Means K-Means, tokenize stage only
+k-means-constrained>=0.7  # (tested 0.9.0) - LETTER codebook init, tokenize stage only
+tqdm>=4.60           # (tested 4.67.0)

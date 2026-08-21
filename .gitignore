@@ -1,0 +1,14 @@
+# Generated artifacts (not part of the release)
+checkpoint/
+results/
+logs/
+wandb/
+
+*.emb-qwen3.npy
+*.npy
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
